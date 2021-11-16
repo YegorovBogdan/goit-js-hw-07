@@ -1,10 +1,12 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
+//gallery
 const galleryComponent = document.querySelector('.gallery');
 const addedGalleryCard = galleryCards(galleryItems);
 let instance = {};
 
+//список изображений
 function galleryCards(gallery){
     return gallery
     .map(({ original, preview, description }) => {
@@ -33,6 +35,7 @@ function createModalImage(picture) {
     return basicLightbox.create(`<img src='${picture}' width='800' height='600'>`)
 }
 
+//открытие модального окна
 function openModalWindow(picture) {
     instance = createModalImage(picture);
     instance.show();
