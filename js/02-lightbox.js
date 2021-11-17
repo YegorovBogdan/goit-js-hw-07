@@ -8,7 +8,6 @@ const addedGalleryCard = galleryCards(galleryItems);
 //появление подписи
 const lightboxSetting = {
     captions: true,
-    captionsData: "alt",
     captionDelay: 250,
   };
 
